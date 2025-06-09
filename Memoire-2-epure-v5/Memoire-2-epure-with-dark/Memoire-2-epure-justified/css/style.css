@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+  font-family: 'EB Garamond', serif;
+  margin: 2em auto;
+  max-width: 800px;
+  padding: 0 1em;
+  color: #333;
+  background: white;
+}
+
+header {
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  display: block;
+}
+
+nav li {
+  margin: 0.5em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+h2 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+main p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+footer {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 0.8em;
+  color: #666;
+}
+
+
+/* Center navigation items */
+nav {
+  text-align: center;
+}
+nav ul {
+  display: inline-block; /* shrink to content */
+}
+nav li {
+  margin: 0.5em 0; /* vertical spacing */
+}
+
+/* Dark mode */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+body.dark header {
+  color: #e0e0e0;
+}
+body.dark nav a {
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+body.dark nav a:hover {
+  background: #e0e0e0;
+  color: #121212;
+}
+/* Dark mode toggle & PDF button */
+#controls {
+  text-align: center;
+  margin: 1em 0;
+}
+#controls button, #controls a {
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #333;
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+}
+body.dark #controls button, body.dark #controls a {
+  background: #333;
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+}
